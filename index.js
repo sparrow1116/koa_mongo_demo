@@ -5,61 +5,45 @@ const Koa = require('koa');
 const fs = require("fs");
 
 const app = new Koa;
-// const {connect,initSchemas} = require('./database/init.js')
-// const mongoose = require('mongoose')
-
-global.alarmMap = new Map();
-
-let alarmArr = JSON.parse(fs.readFileSync("./alarmFile.json",'utf8'));
-
-for(let i =0; i<alarmArr.length;i++){
-    global.alarmMap.set(alarmArr[i].almsequence, alarmArr[i]);
-}
-
+const {connect,initSchemas} = require('./database/init.js')
+const mongoose = require('mongoose')
 
 const bodyParser = require('koa-bodyparser');
 const cors = require('koa2-cors')
 const Router = require('koa-router');
 
-const ws_server = require("./ws_server");
+let bank = require('./appApi/bank.js')
 
 const { logger, accessLogger } = require('./utils/log_config');
-import RPCServer from './rpc_server/server';
-
-// import RPCclient from "./rpc_client/client"
 
 app.use(accessLogger());
-
-const server = new RPCServer();
-server.start();
-
 
 app.use(bodyParser());
 app.use(cors())
 
-let rpc = require('./appApi/rpc.js')
-
 //装载所有子路由
 let router = new Router()
-router.use('/api/rpc',rpc.routes())
+router.use('/api',bank.routes())
 
 //加载路由中间件
 app.use(router.routes())
 app.use(router.allowedMethods())
 
 
-
-
-
 ;(async ()=>{
-    // await connect()
-    // initSchemas()
+    await connect()
+    initSchemas()
 })()
 
-
-
 app.use(async(ctx)=>{
-    ctx.body = '<h1>Hello Koa2</h1>'
+    ctx.set('Access-Control-Allow-Origin', '*');
+  ctx.set('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+  ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+  
+    ctx.body = {
+        code:200,
+        msg:"没有开发这个接口"
+    }
 })
 
 app.on("error",err=>{

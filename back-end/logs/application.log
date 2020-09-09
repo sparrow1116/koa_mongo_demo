@@ -1,0 +1,42 @@
+[2020-09-09T11:24:14.964] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 46910 more bytes>,
+  headerSent: true
+}
+[2020-09-09T11:25:43.126] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 46910 more bytes>,
+  headerSent: true
+}
+[2020-09-09T11:26:47.865] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 46910 more bytes>,
+  headerSent: true
+}
+[2020-09-09T11:30:17.810] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 46910 more bytes>,
+  headerSent: true
+}
+[2020-09-09T11:36:28.219] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 46910 more bytes>,
+  headerSent: true
+}
+[2020-09-09T12:32:28.352] [ERROR] application - [Error: Parse Error: Invalid method encountered] {
+  bytesParsed: 111,
+  code: 'HPE_INVALID_METHOD',
+  reason: 'Invalid method encountered',
+  rawPacket: <Buffer 50 4f 53 54 20 2f 20 48 54 54 50 2f 31 2e 31 0d 0a 43 6f 6e 74 65 6e 74 2d 54 79 70 65 3a 20 61 70 70 6c 69 63 61 74 69 6f 6e 2f 6a 73 6f 6e 0d 0a 43 ... 52930 more bytes>,
+  headerSent: true
+}
