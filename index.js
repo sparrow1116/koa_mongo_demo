@@ -5,7 +5,7 @@ const Koa = require('koa');
 const fs = require("fs");
 
 const app = new Koa;
-const {connect,initSchemas} = require('./database/init.js')
+// const {connect,initSchemas} = require('./database/init.js')
 const mongoose = require('mongoose')
 
 const bodyParser = require('koa-bodyparser');
@@ -15,6 +15,8 @@ const Router = require('koa-router');
 let bank = require('./appApi/bank.js')
 
 const { logger, accessLogger } = require('./utils/log_config');
+
+const {sequelize} = require('./mysql/db')
 
 app.use(accessLogger());
 
@@ -30,10 +32,10 @@ app.use(router.routes())
 app.use(router.allowedMethods())
 
 
-;(async ()=>{
-    await connect()
-    initSchemas()
-})()
+// ;(async ()=>{
+//     await connect()
+//     initSchemas()
+// })()
 
 app.use(async(ctx)=>{
     ctx.set('Access-Control-Allow-Origin', '*');

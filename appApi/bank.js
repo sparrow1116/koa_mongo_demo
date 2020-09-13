@@ -6,32 +6,92 @@ const { sync } = require('glob');
 
 const { logger } = require('../utils/log_config');
 
+const { BankDailyDao } = require('../mysql/dao/bankDaily')
+
+
 const TAG = "sv::api::bank";
 
 
 let router = new Router()
-router.post('/saveList',async(ctx)=>{
-    console.log(TAG,"/saveList");
-    let data = ctx.request.body
-    console.log(TAG, JSON.stringify(data));
 
-
+router.post('/test',async(ctx)=>{
+    console.log(TAG,"/test");
+    let data = ctx.request.body;
+    // for(let key in ctx.request){
+    //     console.log(key);
+    //     console.log(ctx.request[key])
+    // }
+    console.log(TAG,JSON.stringify(data));
+    let dd = null
     try{
-        let bankMode = mongoose.model('BankHead');;
-        let res = await bankMode.insertMany(data);
+        data.description = JSON.stringify(data.description)
+        data.groupArr = JSON.stringify(data.groupArr)
 
+        dd = await BankDailyDao.create(data);
         ctx.body = {
             code:200,
-            msg:"ok"
+            msg:"ok",
+            data:dd
         }
-
     }catch(e){
-        console.log(TAG, "getAlarm error: " + e.stack)
         ctx.body = {
-            code:500,
+            code:200,
             msg:e.stack
         }
     }
+
+    
+})
+
+
+
+
+
+router.post('/saveList',async(ctx)=>{
+    console.log(TAG,"/saveList");
+    let data = ctx.request.body
+
+    try{
+        data.map((item)=>{
+            item.description = JSON.stringify(item.description)
+            item.groupArr = JSON.stringify(item.groupArr)
+        })
+        let result = await BankDailyDao.bulkCreate(data);
+        if(result){
+            ctx.body = {
+                        code:200,
+                        msg:{
+                            code:0,
+                            msg:"存储成功"
+                        }
+                    }
+        }
+    }catch(e){
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+
+    // try{
+    //     let bankMode = mongoose.model('BankHead');;
+    //     let res = await bankMode.insertMany(data);
+
+    //     ctx.body = {
+    //         code:200,
+    //         msg:"ok"
+    //     }
+
+    // }catch(e){
+    //     console.log(TAG, "getAlarm error: " + e.stack)
+    //     ctx.body = {
+    //         code:500,
+    //         msg:e.stack
+    //     }
+    // }
 
 });
 
@@ -41,24 +101,33 @@ router.post('/getDataList',async(ctx)=>{
     let data = ctx.request.body
     console.log(TAG, JSON.stringify(data));
 
-
-    try{
-        let bankMode = mongoose.model('BankHead');;
-       let dd = await bankMode.where("inputDate").equals(data.date).select().exec();
-
-        console.log(dd[0]);
-        ctx.body = {
-            code:200,
-            result:dd
-        }
-
-    }catch(e){
-        console.log(TAG, "getAlarm error: " + e.stack)
-        ctx.body = {
-            code:500,
-            msg:e.stack
+    let dd = await BankDailyDao.find({data:{inputDate:data.date}})
+    console.log(dd.length);
+    ctx.body={
+        code:200,
+        msg:{
+            code:0,
+            data:dd
         }
     }
+
+    // try{
+    //     let bankMode = mongoose.model('BankHead');;
+    //    let dd = await bankMode.where("inputDate").equals(data.date).select().exec();
+
+    //     console.log(dd[0]);
+    //     ctx.body = {
+    //         code:200,
+    //         result:dd
+    //     }
+
+    // }catch(e){
+    //     console.log(TAG, "getAlarm error: " + e.stack)
+    //     ctx.body = {
+    //         code:500,
+    //         msg:e.stack
+    //     }
+    // }
 
 });
 
