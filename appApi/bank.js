@@ -6,7 +6,8 @@ const { sync } = require('glob');
 
 const { logger } = require('../utils/log_config');
 
-const { BankDailyDao } = require('../mysql/dao/bankDaily')
+const { BankDailyDao } = require('../mysql/dao/bankDaily');
+const { BankDailyDetailDao } = require('../mysql/dao/bankDailyDetail')
 
 
 const TAG = "sv::api::bank";
@@ -44,11 +45,65 @@ router.post('/test',async(ctx)=>{
 })
 
 
+router.post('/saveBankDetailList', async (ctx)=>{
+    console.log(TAG,"/saveBankDetailList");
+    let data = ctx.request.body
+
+    try{
+        data.map((item)=>{
+            item.despArr = JSON.stringify(item.despArr)
+            item.picArr = JSON.stringify(item.picArr)
+        })
+        let result = await BankDailyDetailDao.bulkCreate(data);
+        if(result){
+            ctx.body = {
+                        code:200,
+                        msg:{
+                            code:0,
+                            msg:"存储成功"
+                        }
+                    }
+        }
+    }catch(e){
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
+
+router.post('/getDetail', async (ctx)=>{
+    console.log(TAG,"/getDetail");
+    let data = ctx.request.body
+    console.log(TAG, JSON.stringify(data));
+    try{
+        let dd = await BankDailyDetailDao.find({data:data})
+        // console.log(dd.length);
+        ctx.body={
+            code:200,
+            msg:{
+                code:0,
+                data:dd
+            }
+        }
+    }catch(e){
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+    
+})
 
 
-
-router.post('/saveList',async(ctx)=>{
-    console.log(TAG,"/saveList");
+router.post('/saveBankList',async(ctx)=>{
+    console.log(TAG,"/saveBankList");
     let data = ctx.request.body
 
     try{

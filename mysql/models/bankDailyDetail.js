@@ -15,6 +15,10 @@ const BankDailyDetail = sequelize.define(
       'allowNull': false,         // 是否允许为NULL
       'unique': true              // 字段是否UNIQUE, // 字段类型
     },
+    'title': {
+      'type': Sequelize.TEXT,
+      'allowNull': true
+    },
     'orignalUrl': {
       'type': Sequelize.TEXT,
       'allowNull': true
