@@ -1,927 +1,121 @@
-[2020-09-12T15:55:44.476] [ERROR] application - SyntaxError: Unexpected token o in JSON at position 1
-    at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
-  status: 400,
-  body: '[object Object],[object Object]'
-}
-[2020-09-12T15:57:30.078] [ERROR] application - SyntaxError: Unexpected token o in JSON at position 1
-    at JSON.parse (<anonymous>)
-    at _callee2$ (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/appApi/bank.js:45:21)
-    at tryCatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.0.10.5@regenerator-runtime/runtime.js:65:40)
-    at Generator.invoke [as _invoke] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.0.10.5@regenerator-runtime/runtime.js:303:22)
-    at Generator.prototype.<computed> [as next] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.0.10.5@regenerator-runtime/runtime.js:117:21)
-    at step (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/appApi/bank.js:3:191)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/appApi/bank.js:3:437
+[2020-09-21T17:28:17.820] [ERROR] application - ReferenceError: Project is not defined
+    at _callee3$ (E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:27)
+    at tryCatch (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.<computed> [as next] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:117:21)
+    at step (E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:191)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:437
     at new Promise (<anonymous>)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/appApi/bank.js:3:99
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/appApi/bank.js:43:1
-    at dispatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.3.2.1@koa-compose/index.js:44:32)
-    at next (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.3.2.1@koa-compose/index.js:45:18)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.7.4.0@koa-router/lib/router.js:346:16
-    at dispatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.3.2.1@koa-compose/index.js:44:32)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.3.2.1@koa-compose/index.js:36:12
-    at dispatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.7.4.0@koa-router/lib/router.js:351:31)
-    at dispatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.1.0@koa-compose/index.js:42:32)
-    at cors (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.0.6@koa2-cors/dist/index.js:91:15)
-    at dispatch (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.1.0@koa-compose/index.js:42:32)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:95:11)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7
-[2020-09-12T16:05:01.711] [ERROR] application - SyntaxError: Unexpected token t in JSON at position 4
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:99
+    at E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:1
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at cors (E:\self_prj\koa_mongo_wool\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7
+[2020-09-21T17:28:17.835] [ERROR] application - ReferenceError: Project is not defined
+    at _callee3$ (E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:27)
+    at tryCatch (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.<computed> [as next] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:117:21)
+    at step (E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:191)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:437
+    at new Promise (<anonymous>)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:99
+    at E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:1
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at cors (E:\self_prj\koa_mongo_wool\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7
+[2020-09-21T17:29:06.413] [ERROR] application - ReferenceError: Project is not defined
+    at _callee3$ (E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:27)
+    at tryCatch (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.<computed> [as next] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:117:21)
+    at step (E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:191)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:437
+    at new Promise (<anonymous>)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:99
+    at E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:1
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at cors (E:\self_prj\koa_mongo_wool\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7
+[2020-09-21T17:29:06.415] [ERROR] application - ReferenceError: Project is not defined
+    at _callee3$ (E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:27)
+    at tryCatch (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.<computed> [as next] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:117:21)
+    at step (E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:191)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:437
+    at new Promise (<anonymous>)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:99
+    at E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:1
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at cors (E:\self_prj\koa_mongo_wool\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7
+[2020-09-21T17:29:37.955] [ERROR] application - ReferenceError: Project is not defined
+    at _callee3$ (E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:27)
+    at tryCatch (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:65:40)
+    at Generator.invoke [as _invoke] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:303:22)
+    at Generator.prototype.<computed> [as next] (E:\self_prj\koa_mongo_wool\node_modules\_regenerator-runtime@0.10.5@regenerator-runtime\runtime.js:117:21)
+    at step (E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:191)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:437
+    at new Promise (<anonymous>)
+    at E:\self_prj\koa_mongo_wool\appApi\fourWeb_original.js:3:99
+    at E:/self_prj/koa_mongo_wool/appApi/fourWeb_original.js:77:1
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at next (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at cors (E:\self_prj\koa_mongo_wool\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+    at dispatch (E:\self_prj\koa_mongo_wool\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7
+[2020-09-21T17:48:03.622] [ERROR] application - SyntaxError: Unexpected token m in JSON at position 1
     at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
+    at parse (E:\self_prj\koa_mongo_wool\node_modules\_co-body@6.0.0@co-body\lib\json.js:57:17)
+    at AsyncFunction.module.exports [as json] (E:\self_prj\koa_mongo_wool\node_modules\_co-body@6.0.0@co-body\lib\json.js:41:20)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at parseBody (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:100:14)
+    at bodyParser (E:\self_prj\koa_mongo_wool\node_modules\_koa-bodyparser@4.3.0@koa-bodyparser\index.js:85:19)
+    at E:\self_prj\koa_mongo_wool\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:7 {
   status: 400,
-  body: '{\n' +
-    "  title: '京东（爱奇艺+京东年卡）',\n" +
-    "  description: [ '118元可开通：京东Plus年卡+爱奇艺年卡' ],\n" +
-    "  detailUrl: 'http://mp.weixin.qq.com/s?__biz=MzIzMDgxODc4Nw==&mid=2247499588&idx=1&sn=17f9069a434430bd0cc860a90d06bd73&chksm=e8af29c8dfd8a0def1dbf9dd42cee28aafa792b90eb2500c0143f367db3537869dd159ac958a&scene=21#wechat_redirect',\n" +
-    "  router: '活动入口：活动细则扫码/本公众号回复“京东年卡”',\n" +
-    '  time: 1599753600000,\n' +
-    "  inputDate: '2020-09-09',\n" +
-    "  ID: 'ca182db1-2dcb-4172-b0c2-4f7700a7bd47',\n" +
-    "  groupArr: [ '平台|代金券', '视频卡' ],\n" +
-    "  commercial: '京东'\n" +
-    '}'
-}
-[2020-09-12T16:05:31.555] [ERROR] application - SyntaxError: Unexpected token t in JSON at position 4
-    at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
-  status: 400,
-  body: '{\n' +
-    "  title: '京东（爱奇艺+京东年卡）',\n" +
-    "  description: [ '118元可开通：京东Plus年卡+爱奇艺年卡' ],\n" +
-    "  detailUrl: 'http://mp.weixin.qq.com/s?__biz=MzIzMDgxODc4Nw==&mid=2247499588&idx=1&sn=17f9069a434430bd0cc860a90d06bd73&chksm=e8af29c8dfd8a0def1dbf9dd42cee28aafa792b90eb2500c0143f367db3537869dd159ac958a&scene=21#wechat_redirect',\n" +
-    "  router: '活动入口：活动细则扫码/本公众号回复“京东年卡”',\n" +
-    '  time: 1599753600000,\n' +
-    "  inputDate: '2020-09-09',\n" +
-    "  ID: 'ca182db1-2dcb-4172-b0c2-4f7700a7bd47',\n" +
-    "  groupArr: [ '平台|代金券', '视频卡' ],\n" +
-    "  commercial: '京东'\n" +
-    '}'
-}
-[2020-09-12T16:07:30.594] [ERROR] application - SyntaxError: Unexpected token t in JSON at position 4
-    at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
-  status: 400,
-  body: '{\n' +
-    "  title: '京东（爱奇艺+京东年卡）',\n" +
-    "  description: [ '118元可开通：京东Plus年卡+爱奇艺年卡' ],\n" +
-    "  detailUrl: 'http://mp.weixin.qq.com/s?__biz=MzIzMDgxODc4Nw==&mid=2247499588&idx=1&sn=17f9069a434430bd0cc860a90d06bd73&chksm=e8af29c8dfd8a0def1dbf9dd42cee28aafa792b90eb2500c0143f367db3537869dd159ac958a&scene=21#wechat_redirect',\n" +
-    "  router: '活动入口：活动细则扫码/本公众号回复“京东年卡”',\n" +
-    '  time: 1599753600000,\n' +
-    "  inputDate: '2020-09-09',\n" +
-    "  ID: 'ca182db1-2dcb-4172-b0c2-4f7700a7bd47',\n" +
-    "  groupArr: [ '平台|代金券', '视频卡' ],\n" +
-    "  commercial: '京东'\n" +
-    '}'
-}
-[2020-09-12T16:09:17.304] [ERROR] application - SyntaxError: Unexpected token t in JSON at position 4
-    at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
-  status: 400,
-  body: '{\n' +
-    "  title: '京东（爱奇艺+京东年卡）',\n" +
-    "  description: [ '118元可开通：京东Plus年卡+爱奇艺年卡' ],\n" +
-    "  detailUrl: 'http://mp.weixin.qq.com/s?__biz=MzIzMDgxODc4Nw==&mid=2247499588&idx=1&sn=17f9069a434430bd0cc860a90d06bd73&chksm=e8af29c8dfd8a0def1dbf9dd42cee28aafa792b90eb2500c0143f367db3537869dd159ac958a&scene=21#wechat_redirect',\n" +
-    "  router: '活动入口：活动细则扫码/本公众号回复“京东年卡”',\n" +
-    '  time: 1599753600000,\n' +
-    "  inputDate: '2020-09-09',\n" +
-    "  ID: 'ca182db1-2dcb-4172-b0c2-4f7700a7bd47',\n" +
-    "  groupArr: [ '平台|代金券', '视频卡' ],\n" +
-    "  commercial: '京东'\n" +
-    '}'
-}
-[2020-09-12T16:13:46.886] [ERROR] application - SyntaxError: Unexpected token o in JSON at position 1
-    at JSON.parse (<anonymous>)
-    at parse (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:57:17)
-    at AsyncFunction.module.exports [as json] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.6.0.0@co-body/lib/json.js:41:20)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at parseBody (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:100:14)
-    at bodyParser (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.4.3.0@koa-bodyparser/index.js:85:19)
-    at /Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.2.3.2@koa-log4/koa-logger.js:86:7 {
-  status: 400,
-  body: '[object Object]'
-}
-[2020-09-12T16:50:10.076] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.input_data' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.input_data' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_data' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`input_data` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.input_data' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_data' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`input_data` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`input_data` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:50:40.703] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:50:44.905] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:51:01.764] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:51:03.054] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:52:50.340] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:53:30.889] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:54:27.214] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:55:30.193] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:55:49.901] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:56:22.199] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T16:57:21.814] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.inputData' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.inputData' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.inputData' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detail_url` AS `detailUrl`, `router`, `time`, `input_date` AS `inputDate`, `i_d` AS `ID`, `bank`, `group_arr` AS `groupArr`, `commercial`, `created_at`, `updated_at`, `deleted_at` FROM `bank_dailies` AS `BankDaily` WHERE (`BankDaily`.`deleted_at` IS NULL AND `BankDaily`.`inputData` = '2020-09-09');",
-  parameters: undefined
-}
-[2020-09-12T17:15:19.812] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.input_date' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.input_date' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_date' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.input_date' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_date' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-  parameters: undefined
-}
-[2020-09-12T17:15:29.745] [ERROR] application - DatabaseError [SequelizeDatabaseError]: Unknown column 'BankDaily.input_date' in 'where clause'
-    at Query.formatError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:244:16)
-    at Query.handler [as onResult] (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.5.22.3@sequelize/lib/dialects/mysql/query.js:51:23)
-    at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:30:14)
-    at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-    at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-    at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-    at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-    at Socket.emit (events.js:315:20)
-    at Socket.EventEmitter.emit (domain.js:483:12)
-    at addChunk (_stream_readable.js:295:12)
-    at readableAddChunk (_stream_readable.js:271:9)
-    at Socket.Readable.push (_stream_readable.js:212:10)
-    at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-  parent: Error: Unknown column 'BankDaily.input_date' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_date' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-    parameters: undefined
-  },
-  original: Error: Unknown column 'BankDaily.input_date' in 'where clause'
-      at Packet.asError (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packets/packet.js:708:17)
-      at Query.execute (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/commands/command.js:28:26)
-      at Connection.handlePacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:408:32)
-      at PacketParser.onPacket (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:70:12)
-      at PacketParser.executeStart (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/packet_parser.js:75:16)
-      at Socket.<anonymous> (/Users/zyj/Desktop/github/selfprj/koa_mongo_wool/node_modules/.1.7.0@mysql2/lib/connection.js:77:25)
-      at Socket.emit (events.js:315:20)
-      at Socket.EventEmitter.emit (domain.js:483:12)
-      at addChunk (_stream_readable.js:295:12)
-      at readableAddChunk (_stream_readable.js:271:9)
-      at Socket.Readable.push (_stream_readable.js:212:10)
-      at TCP.onStreamRead (internal/stream_base_commons.js:186:23) {
-    code: 'ER_BAD_FIELD_ERROR',
-    errno: 1054,
-    sqlState: '42S22',
-    sqlMessage: "Unknown column 'BankDaily.input_date' in 'where clause'",
-    sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-    parameters: undefined
-  },
-  sql: "SELECT `id`, `title`, `description`, `detailUrl`, `router`, `time`, `inputDate`, `myId`, `bank`, `groupArr`, `commercial`, `createdAt`, `updatedAt` FROM `BankDailies` AS `BankDaily` WHERE `BankDaily`.`input_date` = '2020-09-09';",
-  parameters: undefined
+  body: "{myId:'416758f0-6cf6-4a2e-abe2-8ddbdb71a7aa'}"
 }

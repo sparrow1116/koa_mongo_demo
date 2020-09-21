@@ -13,6 +13,7 @@ const cors = require('koa2-cors')
 const Router = require('koa-router');
 
 let bank = require('./appApi/bank.js')
+let fourWebOriginal = require('./appApi/fourWeb_original.js')
 
 const { logger, accessLogger } = require('./utils/log_config');
 
@@ -26,6 +27,7 @@ app.use(cors())
 //装载所有子路由
 let router = new Router()
 router.use('/api',bank.routes())
+router.use('/api/fourweborginal',fourWebOriginal.routes())
 
 //加载路由中间件
 app.use(router.routes())
