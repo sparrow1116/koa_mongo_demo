@@ -16,7 +16,6 @@ class FourWebDetailDao {
   }
   static async find(option){
     const {data} = option;
-    console.log(data);
     return await FourWebDetail.findAll({
         where:data
     })
@@ -27,7 +26,7 @@ class FourWebDetailDao {
     const {data} = option;
     await FourWebDetail.destroy({
       where:{
-        data
+        myId:data.myId
       }
     })
   }

@@ -23,10 +23,10 @@ class FourWebDao {
 
   static async deleteItem(option){
     const {data} = option;
-    console.log(data)
+    
     await FourWeb.destroy({
       where:{
-        data
+        myId: data.myId
       }
     })
   }
