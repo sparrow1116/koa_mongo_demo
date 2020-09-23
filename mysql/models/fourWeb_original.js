@@ -24,6 +24,10 @@ const FourWeb = sequelize.define(
       'type': Sequelize.TEXT,
       'allowNull': true
     },
+    'headImg': {
+      'type': Sequelize.TEXT,
+      'allowNull': true
+    },
     'time': {
         'type': Sequelize.BIGINT,
         'allowNull': true
