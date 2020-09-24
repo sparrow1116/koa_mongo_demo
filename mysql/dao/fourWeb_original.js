@@ -21,6 +21,13 @@ class FourWebDao {
 
   }
 
+  static async getWebItem(option) {
+    const {data} = option;
+    return await FourWeb.findAll({
+      where:data
+    })
+  }
+
   static async deleteItem(option){
     const {data} = option;
     

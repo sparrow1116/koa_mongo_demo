@@ -76,8 +76,9 @@ router.post('/saveWebDetail',async(ctx)=>{
 
 router.post('/getWebList',async(ctx)=>{
     console.log(TAG,"/getWebList");
+    // console.log(ctx)
     let data = ctx.request.body
-    // console.log(TAG, JSON.stringify(data));
+    console.log(TAG, JSON.stringify(data));
 
     try{
         const {count, rows} = await FourWebDao.getList()
@@ -100,7 +101,36 @@ router.post('/getWebList',async(ctx)=>{
             }
         }
     }
-    
+
+});
+
+router.post('/getWebItem',async(ctx)=>{
+    console.log(TAG,"/getWebItem");
+    let data = ctx.request.body
+    // console.log(TAG, JSON.stringify(data));
+
+    try{
+        const dd = await FourWebDao.getWebItem({data:data})
+        // console.log(count);
+        // console.log(rows)
+        ctx.body={
+            code:200,
+            msg:{
+                code:0,
+                data:dd[0]
+            }
+        }
+    }catch(e){
+        console.log(e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                data:e.stack
+            }
+        }
+    }
+
 });
 
 
@@ -127,7 +157,7 @@ router.post('/getDetail', async (ctx)=>{
             }
         }
     }
-    
+
 })
 
 router.post('/detailItem', async (ctx)=>{
@@ -155,7 +185,7 @@ router.post('/detailItem', async (ctx)=>{
             }
         }
     }
-    
+
 })
 
 module.exports = router;
