@@ -5,7 +5,7 @@ const {Sequelize, Model} = require('sequelize')
 
 
 // 初始用户模型
-const FourWebDetail = sequelize.define(
+const FourWebDetailOriginal = sequelize.define(
   // 默认表名（一般这里写单数），生成时会自动转换成复数形式
   // 这个值还会作为访问模型相关的模型时的属性名，所以建议用小写形式
   'FourWebDetailOriginal',
@@ -28,10 +28,10 @@ const FourWebDetail = sequelize.define(
 );
 
 async function sync(){
-  await FourWebDetail.sync()
+  await FourWebDetailOriginal.sync()
 }
 sync();
 
 module.exports = {
-    FourWebDetail
+  FourWebDetailOriginal
 }

@@ -5,10 +5,10 @@ const {Sequelize, Model} = require('sequelize')
 
 
 // 初始用户模型
-const FourWebOriginal = sequelize.define(
+const FourWebDetail = sequelize.define(
   // 默认表名（一般这里写单数），生成时会自动转换成复数形式
   // 这个值还会作为访问模型相关的模型时的属性名，所以建议用小写形式
-  'FourWebOriginal',
+  'FourWebDetail',
   // 字段定义（主键、created_at、updated_at默认包含，不用特殊定义）
   {
     'myId':{
@@ -20,45 +20,18 @@ const FourWebOriginal = sequelize.define(
       'type': Sequelize.TEXT,
       'allowNull': true
     },
-    'detailUrl': {
+    'contentArr': {
       'type': Sequelize.TEXT,
       'allowNull': true
-    },
-    'headImg': {
-      'type': Sequelize.TEXT,
-      'allowNull': true
-    },
-    'time': {
-        'type': Sequelize.BIGINT,
-        'allowNull': true
-    },
-    'desciption': {
-      'type': Sequelize.TEXT,
-      'allowNull': true
-    },
-    'tags': {
-      'type': Sequelize.TEXT,
-      'allowNull': true
-    },
-    'type': {
-        'type': Sequelize.TEXT,
-        'allowNull': true
-    },
-    'level': {
-        'type': Sequelize.BIGINT,
-        'allowNull': true
     }
-    
-    
-
   }
 );
 
 async function sync(){
-  await FourWebOriginal.sync()
+  await FourWebDetail.sync()
 }
 sync();
 
 module.exports = {
-  FourWebOriginal
+    FourWebDetail
 }

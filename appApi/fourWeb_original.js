@@ -6,8 +6,8 @@ const { sync } = require('glob');
 
 const { logger } = require('../utils/log_config');
 
-const { FourWebDao } = require('../mysql/dao/fourWeb_original');
-const { FourWebDetailDao } = require('../mysql/dao/fourWebDetail_original')
+const { FourWebOriginalDao } = require('../mysql/dao/fourWeb_original');
+const { FourWebDetailOriginalDao } = require('../mysql/dao/fourWebDetail_original')
 
 
 const TAG = "sv::api::fourWeb";
@@ -23,7 +23,7 @@ router.post('/saveWebList', async (ctx)=>{
         data.map((item)=>{
             item.tags = JSON.stringify(item.tags)
         })
-        let result = await FourWebDao.bulkCreate(data);
+        let result = await FourWebOriginalDao.bulkCreate(data);
         if(result){
             ctx.body = {
                         code:200,
@@ -52,7 +52,7 @@ router.post('/saveWebDetail',async(ctx)=>{
         data.map((item)=>{
             item.contentArr = JSON.stringify(item.contentArr)
         })
-        let result = await FourWebDetailDao.bulkCreate(data);
+        let result = await FourWebDetailOriginalDao.bulkCreate(data);
         if(result){
             ctx.body = {
                         code:200,
@@ -81,7 +81,7 @@ router.post('/getWebList',async(ctx)=>{
     console.log(TAG, JSON.stringify(data));
 
     try{
-        const {count, rows} = await FourWebDao.getList()
+        const {count, rows} = await FourWebOriginalDao.getList()
         console.log(count);
         // console.log(rows)
         ctx.body={
@@ -110,7 +110,7 @@ router.post('/getWebItem',async(ctx)=>{
     // console.log(TAG, JSON.stringify(data));
 
     try{
-        const dd = await FourWebDao.getWebItem({data:data})
+        const dd = await FourWebOriginalDao.getWebItem({data:data})
         // console.log(count);
         // console.log(rows)
         ctx.body={
@@ -139,13 +139,13 @@ router.post('/getDetail', async (ctx)=>{
     let data = ctx.request.body
     console.log(TAG, JSON.stringify(data));
     try{
-        let dd = await FourWebDetailDao.find({data:data})
+        let dd = await FourWebDetailOriginalDao.find({data:data})
         // console.log(dd.length);
         ctx.body={
             code:200,
             msg:{
                 code:0,
-                data:dd
+                data:dd[0]
             }
         }
     }catch(e){
@@ -166,8 +166,8 @@ router.post('/detailItem', async (ctx)=>{
     console.log(TAG, JSON.stringify(data));
     try{
 
-        let dd1 = await FourWebDao.deleteItem({data:data})
-        let dd2 = await FourWebDetailDao.deleteItem({data:data})
+        let dd1 = await FourWebOriginalDao.deleteItem({data:data})
+        let dd2 = await FourWebDetailOriginalDao.deleteItem({data:data})
         // console.log(dd.length);
         ctx.body={
             code:200,

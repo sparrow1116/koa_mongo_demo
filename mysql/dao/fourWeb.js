@@ -1,37 +1,37 @@
 
-const {FourWebOriginal} = require('../models/fourWeb_original')
+const {FourWebList} = require('../models/fourWebList')
 const bcrypt = require('bcryptjs')
-const TAG = 'dao::FourWebOriginal'
-class FourWebOriginalDao {
+const TAG = 'dao::FourWebList'
+class FourWebDao {
   // 创建用管理员
   static async create(params) {
-    await FourWebOriginal.create(params)
+    await FourWebList.create(params)
     return true
   }
 
   static async bulkCreate(dataArr){
     console.log(TAG,JSON.stringify(dataArr));
-      await FourWebOriginal.bulkCreate(dataArr)
+      await FourWebList.bulkCreate(dataArr)
       return true
   }
   static async getList(){
     // const {data} = option;
     // console.log(data);
-    return await FourWebOriginal.findAndCountAll()
+    return await FourWebList.findAndCountAll()
 
   }
 
   static async getWebItem(option) {
     const {data} = option;
-    return await FourWebOriginal.findAll({
+    return await FourWebList.findAll({
       where:data
     })
   }
 
   static async deleteItem(option){
     const {data} = option;
-    console.log(data.myId)
-    return await FourWebOriginal.destroy({
+    
+    await FourWebList.destroy({
       where:{
         myId: data.myId
       }
@@ -41,5 +41,5 @@ class FourWebOriginalDao {
 }
 
 module.exports = {
-  FourWebOriginalDao
+    FourWebDao
 }
