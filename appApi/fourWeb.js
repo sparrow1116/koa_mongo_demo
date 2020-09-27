@@ -32,7 +32,34 @@ router.post('/saveItem', async (ctx)=>{
                     code:200,
                     msg:{
                         code:0,
-                        msg:"存储成功"
+                        data:"存储成功"
+                    }
+                }
+        
+    }catch(e){
+        console.log(TAG,e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
+
+router.post('/getList', async (ctx)=>{
+    console.log(TAG,"/getList");
+    let data = ctx.request.body
+    console.log('>>>getList body')
+    console.log(data)
+    try{
+        let { count, rows} = await FourWebDao.getList(data);
+        ctx.body = {
+                    code:200,
+                    msg:{
+                        code:0,
+                        data: {count,rows}
                     }
                 }
         

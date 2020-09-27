@@ -14,10 +14,11 @@ class FourWebDao {
       await FourWebList.bulkCreate(dataArr)
       return true
   }
-  static async getList(){
-    // const {data} = option;
-    // console.log(data);
-    return await FourWebList.findAndCountAll()
+  static async getList(data){
+    return await FourWebList.findAndCountAll({
+      offset: data.index * 10,
+      limit: 10
+    })
 
   }
 
