@@ -51,8 +51,8 @@ router.post('/saveItem', async (ctx)=>{
 router.post('/getList', async (ctx)=>{
     console.log(TAG,"/getList");
     let data = ctx.request.body
-    console.log('>>>getList body')
-    console.log(data)
+    // console.log('>>>getList body')
+    // console.log(data)
     try{
         let { count, rows} = await FourWebDao.getList(data);
         ctx.body = {
@@ -63,6 +63,33 @@ router.post('/getList', async (ctx)=>{
                     }
                 }
         
+    }catch(e){
+        console.log(TAG,e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
+
+router.post('/getDetail', async (ctx)=>{
+    console.log(TAG,"/getDetail");
+    let data = ctx.request.body
+    // console.log('>>>getDetail body')
+    // console.log(data)
+    try{
+        let dd = await FourWebDetailDao.find({data:data})
+        // console.log(dd.length);
+        ctx.body={
+            code:200,
+            msg:{
+                code:0,
+                data:dd[0]
+            }
+        }
     }catch(e){
         console.log(TAG,e.stack)
         ctx.body = {
