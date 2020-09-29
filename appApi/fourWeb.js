@@ -54,15 +54,14 @@ router.post('/getList', async (ctx)=>{
     // console.log('>>>getList body')
     // console.log(data)
     try{
-        let { count, rows} = await FourWebDao.getList(data);
-        ctx.body = {
-                    code:200,
-                    msg:{
-                        code:0,
-                        data: {count,rows}
-                    }
-                }
-        
+
+        if(data.tag || data.level){
+            let { count, rows} = await FourWebDao.getListFilter(data);
+            ctx.body = {code:200, msg:{ code:0, data: {count,rows}}}
+        }else{
+            let { count, rows} = await FourWebDao.getList(data);
+            ctx.body = {code:200, msg:{ code:0, data: {count,rows}}}
+        }
     }catch(e){
         console.log(TAG,e.stack)
         ctx.body = {
@@ -81,7 +80,15 @@ router.post('/getDetail', async (ctx)=>{
     // console.log('>>>getDetail body')
     // console.log(data)
     try{
+        console.log(data)
+        let item = await FourWebDao.getWebItem({data:data})
+        
         let dd = await FourWebDetailDao.find({data:data})
+        // console.log(item[0])
+        // console.log('item.browseCount',item[0].browseCount)
+
+        data.browseCount = item[0].browseCount + 1
+        FourWebDao.update({data:data})
         // console.log(dd.length);
         ctx.body={
             code:200,
