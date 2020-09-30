@@ -55,7 +55,10 @@ router.post('/getList', async (ctx)=>{
     // console.log(data)
     try{
 
-        if(data.tag || data.level){
+        if(data.search){
+            let { count, rows} = await FourWebDao.getListSearch(data);
+            ctx.body = {code:200, msg:{ code:0, data: {count,rows}}}
+        }else if(data.tag || data.level){
             let { count, rows} = await FourWebDao.getListFilter(data);
             ctx.body = {code:200, msg:{ code:0, data: {count,rows}}}
         }else{

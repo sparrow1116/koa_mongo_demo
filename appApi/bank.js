@@ -155,34 +155,19 @@ router.post('/getDataList',async(ctx)=>{
     console.log(TAG,"/getDataList");
     let data = ctx.request.body
     console.log(TAG, JSON.stringify(data));
-
-    let dd = await BankDailyDao.find({data:{inputDate:data.date}})
-    console.log(dd.length);
-    ctx.body={
-        code:200,
-        msg:{
-            code:0,
-            data:dd
-        }
-    }
-
-    // try{
-    //     let bankMode = mongoose.model('BankHead');;
-    //    let dd = await bankMode.where("inputDate").equals(data.date).select().exec();
-
-    //     console.log(dd[0]);
-    //     ctx.body = {
-    //         code:200,
-    //         result:dd
-    //     }
-
-    // }catch(e){
-    //     console.log(TAG, "getAlarm error: " + e.stack)
-    //     ctx.body = {
-    //         code:500,
-    //         msg:e.stack
-    //     }
+    // if(data.filter){
+        let { count, rows}  = await BankDailyDao.find({data:{inputDate:data.date,
+            index:data.index,
+            search:data.search,
+            filter:data.filter}})
+        // console.log(dd.length);
+        ctx.body={code:200,msg:{code:0,data:{count,rows}}}
+    // }else{
+        // let { count, rows}  = await BankDailyDao.find({data:{inputDate:data.date,index:data.index}})
+        // console.log(dd.length);
+        // ctx.body={code:200,msg:{code:0,data:{count, rows}}}
     // }
+    
 
 });
 

@@ -22,6 +22,17 @@ class FourWebDao {
       limit: 10
     })
   }
+  static async getListSearch(data){
+    return await FourWebList.findAndCountAll({
+      where:{
+        title:{
+          [Op.like]:'%' +data.search + '%'
+        }
+      },
+      offset: data.index * 10,
+      limit: 10
+    })
+  }
 
   static async getListFilter(data){
     if(data.level){
