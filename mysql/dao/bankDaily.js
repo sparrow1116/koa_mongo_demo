@@ -40,8 +40,11 @@ class BankDailyDao {
         limit: 10
       })
     }else{
+      // console.log('come in date   ' + date)
       return await BankDaily.findAndCountAll({
-        where:data,
+        where:{
+          inputDate:date,
+        },
         offset: index * 10,
         limit: 10
     })
