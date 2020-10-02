@@ -1,5 +1,6 @@
 
-import 'babel-core/register'
+// import 'babel-core/register'
+require('child_process').exec(`babel-node index.js`)
 
 const Koa = require('koa');
 const fs = require("fs");
