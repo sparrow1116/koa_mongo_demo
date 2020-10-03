@@ -21,6 +21,13 @@ class FourWebOriginalDao {
 
   }
 
+  static async findOne(){
+    const {data} = option;
+    return await FourWebOriginal.findOne({
+      where:data
+    })
+  }
+
   static async getWebItem(option) {
     const {data} = option;
     return await FourWebOriginal.findAll({

@@ -22,6 +22,15 @@ class FourWebDao {
       limit: 10
     })
   }
+
+  static async findOne(){
+    const {data} = option;
+    return await FourWebList.findOne({
+      where:data
+    })
+  }
+
+
   static async getListSearch(data){
     return await FourWebList.findAndCountAll({
       where:{
