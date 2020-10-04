@@ -23,7 +23,7 @@ class FourWebDao {
     })
   }
 
-  static async findOne(){
+  static async findOne(option){
     const {data} = option;
     return await FourWebList.findOne({
       where:data

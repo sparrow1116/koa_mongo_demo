@@ -21,7 +21,7 @@ class FourWebOriginalDao {
 
   }
 
-  static async findOne(){
+  static async findOne(option){
     const {data} = option;
     return await FourWebOriginal.findOne({
       where:data
