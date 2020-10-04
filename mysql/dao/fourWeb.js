@@ -19,6 +19,7 @@ class FourWebDao {
   static async getList(data){
     return await FourWebList.findAndCountAll({
       offset: data.index * 10,
+      order: [[ 'time', 'DESC' ]],
       limit: 10
     })
   }
@@ -38,6 +39,7 @@ class FourWebDao {
           [Op.like]:'%' +data.search + '%'
         }
       },
+      order: [[ 'time', 'DESC' ]],
       offset: data.index * 10,
       limit: 10
     })
@@ -47,6 +49,7 @@ class FourWebDao {
     if(data.level){
       return await FourWebList.findAndCountAll({
         where: { level: data.level },
+		order: [[ 'time', 'DESC' ]],
         offset: data.index * 10,
         limit: 10
       })
@@ -57,12 +60,34 @@ class FourWebDao {
             [Op.like]:'%' +data.tag + '%'
           }
         },
+        order: [[ 'time', 'DESC' ]],
         offset: data.index * 10,
         limit: 10
       })
     }
     
   }
+  static async updateAll(data){
+	  console.log(data)
+	  let id = data.myId;
+	  delete data.myId
+	  return await FourWebList.update(
+	    {
+	      desciption:data.desciption,
+		  headImg:data.headImg,
+		  level:data.level,
+		  tags:data.tags,
+		  title:data.title,
+		  type:data.type
+	    },
+	    {
+	      where:{
+	        myId:id
+	      }
+	    }
+	  )
+  }
+  
   static async update(option){
     const {data} = option;
     // console.log(data)

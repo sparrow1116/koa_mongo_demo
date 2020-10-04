@@ -21,6 +21,22 @@ class FourWebDetailDao {
     })
 
   }
+  static async updateAll(data){
+  	  console.log(data.contentArr)
+  	  let id = data.myId;
+  	  delete data.myId
+  	  return await FourWebDetail.update(
+  	    {
+  	      contentArr:data.contentArr,
+		  title:data.title
+  	    },
+  	    {
+  	      where:{
+  	        myId:id
+  	      }
+  	    }
+  	  )
+  }
 
   static async deleteItem(option){
     const {data} = option;

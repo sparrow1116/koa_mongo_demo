@@ -81,14 +81,14 @@ router.post('/getWebList',async(ctx)=>{
     console.log(TAG, JSON.stringify(data));
 
     try{
-        const {count, rows} = await FourWebOriginalDao.getList()
+        const {count, rows} = await FourWebOriginalDao.getList(data)
         console.log(count);
         // console.log(rows)
         ctx.body={
             code:200,
             msg:{
                 code:0,
-                data:rows
+                data:{count,rows}
             }
         }
     }catch(e){

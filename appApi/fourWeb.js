@@ -47,6 +47,61 @@ router.post('/saveItem', async (ctx)=>{
         }
     }
 });
+router.post('/update', async (ctx)=>{
+    console.log(TAG,"/update");
+    let data = ctx.request.body
+    try{
+        let instruction = data.instruction;
+        let detail = data.detail;
+        let a = await FourWebDao.updateAll(instruction);
+        let b =await FourWebDetailDao.updateAll(detail);
+        ctx.body = {
+                    code:200,
+                    msg:{
+                        code:0,
+                        data:"更新成功"
+                    }
+                }
+        
+    }catch(e){
+        console.log(TAG,e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
+
+
+router.post('/getItem', async (ctx)=>{
+	console.log(TAG,"/getItem");
+	let data = ctx.request.body
+	
+	try{
+		const dd = await FourWebDao.findOne({data:data})
+		// console.log(count);
+		// console.log(rows)
+		ctx.body={
+		    code:200,
+		    msg:{
+		        code:0,
+		        data:dd
+		    }
+		}
+	}catch(e){
+		console.log(TAG,e.stack)
+		ctx.body = {
+		    code:200,
+		    msg:{
+		        code:1,
+		        msg:e.stack
+		    }
+		}
+	}
+})
 
 router.post('/getList', async (ctx)=>{
     console.log(TAG,"/getList");
