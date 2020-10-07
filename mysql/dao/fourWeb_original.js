@@ -19,6 +19,7 @@ class FourWebOriginalDao {
     // console.log(data);
     return await FourWebOriginal.findAndCountAll({
       offset: data.index * 10,
+      order: [[ 'time', 'DESC' ]],
       limit: 10
     })
 
