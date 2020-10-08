@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "fs": "^0.0.1-security",
     "glob": "^7.1.2",
     "koa": "^2.5.2",
     "koa-bodyparser": "^4.2.1",

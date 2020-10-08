@@ -10,13 +10,84 @@ const { FourWebOriginalDao } = require('../mysql/dao/fourWeb_original');
 const { FourWebDetailOriginalDao } = require('../mysql/dao/fourWebDetail_original')
 
 const { FourWebDao } = require('../mysql/dao/fourWeb');
-const { FourWebDetailDao } = require('../mysql/dao/fourWebDetail')
+const { FourWebDetailDao } = require('../mysql/dao/fourWebDetail');
+const fs = require('fs')
 
 
 const TAG = "sv::api::fourWeb";
 
 
 let router = new Router()
+
+
+router.post('/deleteItem', async (ctx)=>{
+    console.log(TAG,"/deleteItem");
+    let data = ctx.request.body
+    try{
+        let picArr = JSON.parse(fs.readFileSync(__dirname + "/needDeletePic.json",'utf8'))
+
+        let a =  await FourWebDao.getWebItem({data:data})
+        picArr.push(a[0].headImg)
+        // a[0].headImg
+        let b = await FourWebDetailDao.find({data:data});
+        let bcontentArr = JSON.parse(b[0].contentArr);
+        //b[0].contentArr
+        for(let i = 0; i<bcontentArr.length;i++){
+            if(bcontentArr[i].type === 'img'){
+                picArr.push(bcontentArr[i].data)
+            }
+        }
+        await FourWebDao.deleteItem({data:data});
+        await FourWebDetailDao.deleteItem({data:data});
+        fs.writeFileSync(__dirname + '/needDeletePic.json',JSON.stringify(picArr),"utf8")
+        ctx.body = {
+                    code:200,
+                    msg:{
+                        code:0,
+                        data:"存储成功"
+                    }
+                }
+        
+    }catch(e){
+        console.log(TAG,e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
+router.post('/createItem', async (ctx)=>{
+    console.log(TAG,"/createItem");
+    let data = ctx.request.body
+    try{
+        let instruction = data.instruction;
+        let detail = data.detail;
+        console.log(detail)
+        console.log(detail.myId)
+        console.log(instruction.myId)
+        let a = await FourWebDao.create(instruction);
+        let b =await FourWebDetailDao.create(detail);
+        ctx.body = {
+                    code:200,
+                    msg:{
+                        code:0,
+                        data:"存储成功"
+                    }
+                }
+    }catch(e){
+        console.log(TAG,e.stack)
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+});
 
 router.post('/saveItem', async (ctx)=>{
     console.log(TAG,"/saveItem");

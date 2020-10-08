@@ -9,6 +9,7 @@ const { logger } = require('../utils/log_config');
 const { FourWebOriginalDao } = require('../mysql/dao/fourWeb_original');
 const { FourWebDetailOriginalDao } = require('../mysql/dao/fourWebDetail_original')
 
+const fs = require('fs')
 
 const TAG = "sv::api::fourWeb";
 
@@ -160,14 +161,28 @@ router.post('/getDetail', async (ctx)=>{
 
 })
 
-router.post('/detailItem', async (ctx)=>{
-    console.log(TAG,"/detailItem");
+router.post('/deleteItem', async (ctx)=>{
+    console.log(TAG,"/deleteItem");
     let data = ctx.request.body
     console.log(TAG, JSON.stringify(data));
     try{
 
+        let picArr = JSON.parse(fs.readFileSync(__dirname + "/needDeletePic.json",'utf8'))
+        let a =  await FourWebOriginalDao.findOne({data:data})
+        picArr.push(a.headImg)
+        // a[0].headImg
+        let b = await FourWebDetailOriginalDao.find({data:data});
+        let bcontentArr = JSON.parse(b[0].contentArr);
+        //b[0].contentArr
+        for(let i = 0; i<bcontentArr.length;i++){
+            if(bcontentArr[i].type === 'img'){
+                picArr.push(bcontentArr[i].data)
+            }
+        }
+
         let dd1 = await FourWebOriginalDao.deleteItem({data:data})
         let dd2 = await FourWebDetailOriginalDao.deleteItem({data:data})
+        fs.writeFileSync(__dirname + '/needDeletePic.json',JSON.stringify(picArr),"utf8")
         // console.log(dd.length);
         ctx.body={
             code:200,
