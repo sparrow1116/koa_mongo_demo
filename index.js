@@ -4,7 +4,7 @@ require('child_process').exec(`babel-node index.js`)
 
 const Koa = require('koa');
 const https = require('https')
-const enforceHttps = require('koa-sslify')
+const enforceHttps = require('koa-sslify').default
 const fs = require("fs");
 
 const app = new Koa;
@@ -25,9 +25,39 @@ const { logger, accessLogger } = require('./utils/log_config');
 const {sequelize} = require('./mysql/db')
 
 app.use(accessLogger());
-app.use(enforceHttps())
-app.use(bodyParser());
-app.use(cors())
+// console.log(enforceHttps)
+// app.use(enforceHttps())
+app.use(bodyParser({
+    enableTypes: ['json', 'form', 'text'], // 配置可解析的类型
+  }));
+app.use(cors({
+    origin: function (ctx) {
+        return '*'  // 允许来自所有域名请求
+       // return 'http://localhost:8080'; / 这样就能只允许 http://localhost:8080 这个域名的请求了
+    },
+    exposeHeaders: ['WWW-Authenticate', 'Server-Authorization'],
+    maxAge: 5,
+    credentials: true,
+    allowMethods: ['GET', 'POST', 'DELETE', 'OPTIONS', 'PUT'],
+    allowHeaders: ['Content-Type', 'Authorization', 'Accept'],
+}))
+app.use(async (ctx, next)=> {
+    ctx.set("Access-Control-Allow-Origin", "*");
+    ctx.set("Access-Control-Allow-Headers", "X-Requested-With");
+    ctx.set("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    ctx.set("X-Powered-By",' 3.2.1');
+    ctx.set("Content-Type", "application/json;charset=utf-8");
+
+    // ctx.set('Access-Control-Allow-Origin', '*');
+    // ctx.set('Access-Control-Allow-Headers', 'Content-Type, Content-Length, Authorization, Accept, X-Requested-With , yourHeaderFeild');
+    // ctx.set('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+    if (ctx.method == 'OPTIONS') {
+        console.log('fuck')
+      ctx.body = 200; 
+    } else {
+      await next();
+    }
+  });
 
 //装载所有子路由
 let router = new Router()
@@ -59,10 +89,13 @@ app.on("error",err=>{
 })
 
 const options = {
-    key: fs.readFileSync('ssh/4597038_www.yangmaoba.club.key'),
-    cert: fs.readFileSync('ssh/4597038_www.yangmaoba.club.crt')
+    key: fs.readFileSync('./ssh/4597038_www.yangmaoba.club.key'),
+    cert: fs.readFileSync('./ssh/4597038_www.yangmaoba.club.pem')
 }
 
 https.createServer(options,app.callback()).listen(3000,()=>{
     console.log('[server] starting at port 3000')
 })
+// app.listen(3000,()=>{
+//     console.log('[server] starting at port 3000')
+// })
