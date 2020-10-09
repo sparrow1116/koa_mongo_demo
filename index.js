@@ -3,6 +3,8 @@
 require('child_process').exec(`babel-node index.js`)
 
 const Koa = require('koa');
+const https = require('https')
+const enforceHttps = require('koa-sslify')
 const fs = require("fs");
 
 const app = new Koa;
@@ -23,7 +25,7 @@ const { logger, accessLogger } = require('./utils/log_config');
 const {sequelize} = require('./mysql/db')
 
 app.use(accessLogger());
-
+app.use(enforceHttps())
 app.use(bodyParser());
 app.use(cors())
 
@@ -56,6 +58,11 @@ app.on("error",err=>{
     logger.error(err);
 })
 
-app.listen(3000,()=>{
+const options = {
+    key: fs.readFileSync('ssh/4597038_www.yangmaoba.club.key'),
+    cert: fs.readFileSync('ssh/4597038_www.yangmaoba.club.crt')
+}
+
+https.createServer(options,app.callback()).listen(3000,()=>{
     console.log('[server] starting at port 3000')
 })
