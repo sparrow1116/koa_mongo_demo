@@ -23,7 +23,7 @@ let edit = require('./appApi/edit.js')
 const { logger, accessLogger } = require('./utils/log_config');
 
 const {sequelize} = require('./mysql/db')
-app.use(require('koa-static')(__dirname + '/public'))
+app.use(require('koa-static')(__dirname + '/h5'))
 
 app.use(accessLogger());
 // console.log(enforceHttps)
@@ -94,7 +94,7 @@ const options = {
     cert: fs.readFileSync('./ssh/4599065_www.yangmaoba.club.pem')
 }
 
-https.createServer(options,app.callback()).listen(3000,()=>{
+https.createServer(options,app.callback()).listen(443,()=>{
     console.log('[server] starting at port 3000')
 })
 // app.listen(3000,()=>{
