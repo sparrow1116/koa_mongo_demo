@@ -4,6 +4,7 @@ require('child_process').exec(`babel-node index.js`)
 
 const Koa = require('koa');
 const https = require('https')
+const http = require('http');
 const enforceHttps = require('koa-sslify').default
 const fs = require("fs");
 
@@ -97,6 +98,10 @@ const options = {
 https.createServer(options,app.callback()).listen(443,()=>{
     console.log('[server] starting at port 3000')
 })
+http.createServer((req,res)=>{
+    res.writeHead(301, {'Location': 'https://www.yangmaoba.club/'});
+      res.end();
+  }).listen(80);
 // app.listen(3000,()=>{
 //     console.log('[server] starting at port 3000')
 // })
