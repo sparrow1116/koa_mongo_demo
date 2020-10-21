@@ -20,6 +20,7 @@ let bank = require('./appApi/bank.js')
 let fourWebOriginal = require('./appApi/fourWeb_original.js')
 let fourWeb = require('./appApi/fourWeb.js')
 let edit = require('./appApi/edit.js')
+let user = require('./appApi/user.js')
 
 const { logger, accessLogger } = require('./utils/log_config');
 
@@ -67,6 +68,7 @@ router.use('/api',bank.routes())
 router.use('/api/fourweborginal',fourWebOriginal.routes())
 router.use('/api/fourweb',fourWeb.routes())
 router.use('/api/edit',edit.routes())
+router.use('/api/user',user.routes())
 
 //加载路由中间件
 app.use(router.routes())
