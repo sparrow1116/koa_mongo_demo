@@ -28,7 +28,7 @@ class UserInfoDao {
             city:data.city,
             province:data.province,
             country:data.country,
-            avatarUrl:avatarUrl},
+            avatarUrl:data.avatarUrl},
             {
                 where:{
                     myId:id

@@ -1,5 +1,7 @@
 /node_modules
 /.idea
+/deleteBankPic.js
+/deleteWebPic.js
 /back-end
 /utils/db_config.js
 /ssh

@@ -5,10 +5,10 @@ const {Sequelize, Model} = require('sequelize')
 
 
 // 初始用户模型
-const UserInfo = sequelize.define(
+const Comment = sequelize.define(
   // 默认表名（一般这里写单数），生成时会自动转换成复数形式
   // 这个值还会作为访问模型相关的模型时的属性名，所以建议用小写形式
-  'UserInfo',
+  'Comment',
   // 字段定义（主键、created_at、updated_at默认包含，不用特殊定义）
   {
     'myId':{
@@ -16,31 +16,35 @@ const UserInfo = sequelize.define(
       'allowNull': false,         // 是否允许为NULL
       'unique': true              // 字段是否UNIQUE, // 字段类型
     },
-    'gender':{
-        'type': Sequelize.BIGINT,
+    'activityId':{
+        'type': Sequelize.TEXT,
+        'allowNull': true
+    },
+    'userId':{
+        'type': Sequelize.TEXT,
+        'allowNull': true
+    },
+    'avatarUrl':{
+        'type': Sequelize.TEXT,
         'allowNull': true
     },
     'nickName': {
       'type': Sequelize.TEXT,
       'allowNull': true
     },
-    'language': {
+    'content': {
       'type': Sequelize.TEXT,
       'allowNull': true
     },
-    'city': {
-      'type': Sequelize.TEXT,
+    'time': {
+      'type': Sequelize.BIGINT,
       'allowNull': true
     },
-    'province': {
+    'favourUser': {
         'type': Sequelize.TEXT,
         'allowNull': true
     },
-    'country': {
-      'type': Sequelize.TEXT,
-      'allowNull': true
-    },
-    'avatarUrl': {
+    'parent': {
       'type': Sequelize.TEXT,
       'allowNull': true
     }
@@ -48,10 +52,10 @@ const UserInfo = sequelize.define(
 );
 
 async function sync(){
-  await UserInfo.sync()
+  await Comment.sync()
 }
 sync();
 
 module.exports = {
-    UserInfo
+    Comment
 }

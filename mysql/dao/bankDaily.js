@@ -16,6 +16,23 @@ class BankDailyDao {
       await BankDaily.bulkCreate(dataArr)
       return true
   }
+
+  static async delete(data){
+    await BankDaily.destroy({
+      where:{
+        inputDate: data.inputDate
+      }
+    })
+  }
+
+  static async findAllByDate(data){
+    return await BankDaily.findAndCountAll({
+      where:{
+        inputDate: data.inputDate
+      }
+    })
+  }
+
   static async find(option){
     const {data} = option;
     // console.log(data);

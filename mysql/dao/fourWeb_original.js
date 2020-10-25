@@ -10,7 +10,7 @@ class FourWebOriginalDao {
   }
 
   static async bulkCreate(dataArr){
-    console.log(TAG,JSON.stringify(dataArr));
+    // console.log(TAG,JSON.stringify(dataArr));
       await FourWebOriginal.bulkCreate(dataArr)
       return true
   }

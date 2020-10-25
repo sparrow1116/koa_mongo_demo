@@ -172,4 +172,36 @@ router.post('/getDataList',async(ctx)=>{
 });
 
 
+router.post('/deleteByDate', async (ctx)=>{
+    console.log(TAG,"/deleteByDate");
+    let data = ctx.request.body
+    console.log(TAG, JSON.stringify(data));
+    try{
+
+        let {count, rows} = BankDailyDao.findAllByDate(data);
+        for(let i = 0; i<count; i++){
+            await BankDailyDetailDao.deleteById(rows[i].myId)
+        }
+        let dd1 =  await BankDailyDao.delete(data)
+        
+        // console.log(dd.length);
+        ctx.body={
+            code:200,
+            msg:{
+                code:0,
+                data:[dd1,dd2]
+            }
+        }
+    }catch(e){
+        ctx.body = {
+            code:200,
+            msg:{
+                code:1,
+                msg:e.stack
+            }
+        }
+    }
+
+})
+
 module.exports = router;

@@ -13,10 +13,25 @@ class BankDailyDetailDao {
     return await BankDailyDetail.findOne({
         where:data
     })
-
   }
 
+  static async findById(myId){
+    // const {data} = option;
+    // console.log(data);
+    return await BankDailyDetail.findOne({
+        where:{
+          myId: myId
+        }
+    })
+  }
 
+  static async deleteById(myId){
+    await BankDailyDetail.destroy({
+      where:{
+        myId: myId
+      }
+    })
+  }
 }
 
 module.exports = {
