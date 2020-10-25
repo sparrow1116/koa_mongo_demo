@@ -9,6 +9,8 @@ const { logger } = require('../utils/log_config');
 const { BankDailyDao } = require('../mysql/dao/bankDaily');
 const { BankDailyDetailDao } = require('../mysql/dao/bankDailyDetail')
 
+const fs = require('fs')
+
 
 const TAG = "sv::api::bank";
 
@@ -177,9 +179,16 @@ router.post('/deleteByDate', async (ctx)=>{
     let data = ctx.request.body
     console.log(TAG, JSON.stringify(data));
     try{
-
-        let {count, rows} = BankDailyDao.findAllByDate(data);
+        let {count, rows} = await BankDailyDao.findAllByDate(data);
+	
         for(let i = 0; i<count; i++){
+            let dd = await BankDailyDetailDao.findById(rows[i].myId)
+            let picArr = JSON.parse(fs.readFileSync(__dirname + "/needDeleteBankPic.json",'utf8'))
+            picArr.push(dd.picArr)
+            // let newPicArr = [...dd.picArr, ...picArr]
+            
+
+            fs.writeFileSync(__dirname + "/needDeleteBankPic.json",JSON.stringify(picArr),'utf8')
             await BankDailyDetailDao.deleteById(rows[i].myId)
         }
         let dd1 =  await BankDailyDao.delete(data)
@@ -189,7 +198,7 @@ router.post('/deleteByDate', async (ctx)=>{
             code:200,
             msg:{
                 code:0,
-                data:[dd1,dd2]
+                data:true
             }
         }
     }catch(e){

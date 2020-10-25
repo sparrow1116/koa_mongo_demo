@@ -46,16 +46,28 @@ class BankDailyDao {
     if(filter){
       // console.log('filter');
       // console.log(filter)
-      return await BankDaily.findAndCountAll({
-        where:{
-          inputDate:date,
-          groupArr:{
-            [Op.like]:'%' + filter + '%'
-          }
-        },
-        offset: index * 10,
-        limit: 10
-      })
+      if(filter == '银行排序'){
+        console.log('come in sort')
+        return await BankDaily.findAndCountAll({
+          where:{
+            inputDate:date
+          },
+          order: [[ 'bank', 'DESC' ]],
+          offset: index * 10,
+          limit: 10
+        })
+      }else{
+        return await BankDaily.findAndCountAll({
+          where:{
+            inputDate:date,
+            groupArr:{
+              [Op.like]:'%' + filter + '%'
+            }
+          },
+          offset: index * 10,
+          limit: 10
+        })
+      }
     }else{
       // console.log('come in date   ' + date)
       return await BankDaily.findAndCountAll({

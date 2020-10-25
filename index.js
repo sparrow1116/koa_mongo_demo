@@ -22,6 +22,7 @@ let fourWeb = require('./appApi/fourWeb.js')
 let edit = require('./appApi/edit.js')
 let user = require('./appApi/user.js')
 let comment = require('./appApi/comment.js')
+let static = require('./appApi/static.js')
 
 const { logger, accessLogger } = require('./utils/log_config');
 
@@ -71,6 +72,7 @@ router.use('/api/fourweb',fourWeb.routes())
 router.use('/api/edit',edit.routes())
 router.use('/api/user',user.routes())
 router.use('/api/comment', comment.routes())
+router.use('/api/static', static.routes())
 
 //加载路由中间件
 app.use(router.routes())
@@ -99,13 +101,13 @@ const options = {
     cert: fs.readFileSync('./ssh/4599065_www.yangmaoba.club.pem')
 }
 
-https.createServer(options,app.callback()).listen(443,()=>{
-    console.log('[server] starting at port 3000')
-})
-http.createServer((req,res)=>{
-    res.writeHead(301, {'Location': 'https://www.yangmaoba.club/'});
-      res.end();
-  }).listen(80);
-// app.listen(3000,()=>{
+// https.createServer(options,app.callback()).listen(443,()=>{
 //     console.log('[server] starting at port 3000')
 // })
+// http.createServer((req,res)=>{
+//     res.writeHead(301, {'Location': 'https://www.yangmaoba.club/'});
+//       res.end();
+//   }).listen(80);
+app.listen(3000,()=>{
+    console.log('[server] starting at port 3000')
+})
