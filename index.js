@@ -99,13 +99,13 @@ const options = {
     cert: fs.readFileSync('./ssh/4599065_www.yangmaoba.club.pem')
 }
 
-// https.createServer(options,app.callback()).listen(443,()=>{
-//     console.log('[server] starting at port 3000')
-// })
-// http.createServer((req,res)=>{
-//     res.writeHead(301, {'Location': 'https://www.yangmaoba.club/'});
-//       res.end();
-//   }).listen(80);
-app.listen(3000,()=>{
+https.createServer(options,app.callback()).listen(443,()=>{
     console.log('[server] starting at port 3000')
 })
+http.createServer((req,res)=>{
+    res.writeHead(301, {'Location': 'https://www.yangmaoba.club/'});
+      res.end();
+  }).listen(80);
+// app.listen(3000,()=>{
+//     console.log('[server] starting at port 3000')
+// })
