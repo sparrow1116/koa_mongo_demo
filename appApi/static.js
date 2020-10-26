@@ -11,7 +11,7 @@ router.post('/weixinqun',async(ctx)=>{
     // let data = ctx.request.body
     // console.log(TAG, JSON.stringify(data));
 	try{      
-		ctx.body={code:200,msg:{code:0,data:'https://bankdata.oss-cn-beijing.aliyuncs.com/weixinqun.png?v=1'}}	
+		ctx.body={code:200,msg:{code:0,data:'https://bankdata.oss-cn-beijing.aliyuncs.com/weixinqun.png?v=2'}}	
 	}catch(e){
         ctx.body = {code:200,msg:{code:1,data:'server error'}}
 	}
@@ -43,7 +43,7 @@ router.post('/xiaochengxu',async(ctx)=>{
     // let data = ctx.request.body
     // console.log(TAG, JSON.stringify(data));
 	try{      
-		ctx.body={code:200,msg:{code:0,data:''}}	
+		ctx.body={code:200,msg:{code:0,data:'https://bankdata.oss-cn-beijing.aliyuncs.com/xiaochengxu.png?v=1'}}	
 	}catch(e){
         ctx.body = {code:200,msg:{code:1,data:'server error'}}
 	}
