@@ -11,7 +11,7 @@ router.post('/weixinqun',async(ctx)=>{
     // let data = ctx.request.body
     // console.log(TAG, JSON.stringify(data));
 	try{                                     
-		ctx.body={code:200,msg:{code:0,data:'https://bankdata.oss-cn-beijing.aliyuncs.com/wexinqun.png?v=2'}}	
+		ctx.body={code:200,msg:{code:0,data:'https://bankdata.oss-cn-beijing.aliyuncs.com/wexinqun.png?v=3'}}	
 	}catch(e){
         ctx.body = {code:200,msg:{code:1,data:'server error'}}
 	}
